@@ -1,4 +1,22 @@
-header{
-    width: 200px;
-    background-color: aqua;
+html{
+    height: 4000px;
 }
+#nombre{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section div h1, h2{
+    margin: 10px auto;
+}
+
+/* 
+$midnight-blue: rgba(20, 11, 92, 1);
+$russian-violet: rgba(15, 8, 68, 1);
+$rhythm: rgba(108, 111, 127, 1);
+$gainsboro: rgba(219, 217, 219, 1);
+$platinum: rgba(229, 235, 234, 1);
+*/
