@@ -1,5 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 html{
     height: 4000px;
+}
+section{
+    width: 100%;
+    height: 1080px;
+    background: url("../IMG/BkgrndH1.jpg") repeat 0 0;
+    background-position: center;
 }
 #nombre{
     position: absolute;
@@ -11,8 +21,14 @@ html{
 
 section div h1, h2{
     margin: 10px auto;
+
 }
 
+section div h1{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Damion', cursive;
+    font-size: 80px;
+}
 /* 
 $midnight-blue: rgba(20, 11, 92, 1);
 $russian-violet: rgba(15, 8, 68, 1);
