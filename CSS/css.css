@@ -1,4 +1,4 @@
-@keyframes aparecerSombra {
+@keyframes aparecerSombraTexto {
     0% {
       text-shadow:0px 0px 7px rgb(0, 0, 0);
     }
@@ -6,14 +6,34 @@
         text-shadow: 10px 10px 7px rgb(0, 0, 0);
     }
   }
+  @keyframes aparecerTexto {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @keyframes aparecerSombraCaja {
+    0% {
+      box-shadow:2px 2px 7px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    }
+  }
 *{
     margin: 0px;
     padding: 0px;
 }
 html{
-    height: 4000px;
+    scroll-behavior: smooth;
 }
-section{
+body{
+    height: 4000px;
+    background-color: rgba(238, 236, 235, 1);
+}
+#pantallaInicial{
     width: 100%;
     height: 1080px;
     background: url("../IMG/BkgrndH1.jpg") repeat 0 0;
@@ -29,21 +49,41 @@ section{
 
 section div h1, h2{
     margin: 10px auto;
-
 }
 
 section div h1{
     font-family: 'Smooch', cursive;
     font-size: 80px;
-    color: rgb(95, 223, 169);
-    animation: 1s ease-out 0s 1 aparecerSombra;
+    color: rgb(134, 187, 216);
+    animation: 1s ease-out 1s 1 aparecerSombraTexto, 3s ease-out 0s 1 aparecerTexto;
     animation-fill-mode: forwards; 
 }
 section div h2{
     font-size: 30px;
-    color: rgb(95, 223, 169);
-    animation: 1s ease-out 0s 1 aparecerSombra;
+    color: rgb(134, 187, 216);
+    animation: 1s ease-out 1s 1 aparecerSombraTexto, 3s ease-out 0s 1 aparecerTexto;
     animation-fill-mode: forwards; 
+}
+
+section div a{
+    opacity: 0;
+    width: 100px;
+    height: 40px;
+    border: 3px solid rgb(97, 123, 170);
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    line-height: 40px;
+    color: rgb(134, 187, 216);
+    border-radius: 4px;
+    animation: 1s ease-out 3s 1 aparecerSombraTexto, 2s ease-out 3s 1 aparecerTexto,1s ease-out 4s 1 aparecerSombraCaja;
+    animation-fill-mode: forwards; 
+}
+#aboutMe{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: -2;
 }
 /* 
 $midnight-blue: rgba(20, 11, 92, 1);
@@ -51,4 +91,10 @@ $russian-violet: rgba(15, 8, 68, 1);
 $rhythm: rgba(108, 111, 127, 1);
 $gainsboro: rgba(219, 217, 219, 1);
 $platinum: rgba(229, 235, 234, 1);
+
+$cool-grey: rgba(140, 136, 172, 1);
+$midnight-blue: rgba(20, 20, 100, 1);
+$isabelline: rgba(238, 236, 235, 1);
+$midnight-blue-2: rgba(19, 10, 88, 1);
+$lavender-gray: rgba(185, 181, 200, 1);
 */
