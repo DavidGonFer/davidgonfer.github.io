@@ -21,11 +21,11 @@ section{
 
 section div h1, h2{
     margin: 10px auto;
-
 }
 
 section div h1{
     font-family: 'Smooch', cursive;
+    font-size:80px;
 }
 /* 
 $midnight-blue: rgba(20, 11, 92, 1);
