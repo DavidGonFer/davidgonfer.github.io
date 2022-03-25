@@ -23,6 +23,8 @@
     }
   }
 
+  
+
 *{
     margin: 0px;
     padding: 0px;
@@ -103,6 +105,9 @@ body{
     z-index: 0;
     background-color: rgb(20, 20, 100);
 }
+#whiteBackgroundLimit{
+    height: 600px;
+}
 #whiteBackground{
     position: sticky;
     top:200px;
@@ -145,7 +150,6 @@ $russian-violet: rgba(15, 8, 68, 1);
 $rhythm: rgba(108, 111, 127, 1);
 $gainsboro: rgba(219, 217, 219, 1);
 $platinum: rgba(229, 235, 234, 1);
-
 $cool-grey: rgba(140, 136, 172, 1);
 $midnight-blue: rgba(20, 20, 100, 1);
 $isabelline: rgba(238, 236, 235, 1);
