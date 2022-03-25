@@ -86,6 +86,7 @@ body{
     border-radius: 4px;
     animation: 1s ease-out 3s 1 aparecerSombraTexto, 2s ease-out 3s 1 aparecerTexto,1s ease-out 3s 1 aparecerSombraCaja;
     animation-fill-mode: forwards; 
+    font-weight: 800;
 }
 
 #marcador1{
@@ -143,6 +144,21 @@ body{
     height: 300px;
     margin: 40px;
     box-shadow: 6px 6px 0px rgb(49, 49, 49);
+}
+#studyButton a{
+    width: 150px;
+    height: 60px;
+    background-color: rgb(20, 20, 100) ;
+    border: 3px solid rgb(13, 13, 65);
+    text-decoration: none;
+    display: block;
+    margin: 50px auto;
+    line-height: 60px;
+    color: rgb(134, 187, 216);
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgb(13, 13, 65);
+    font-weight: 800;
 }
 /* 
 $midnight-blue: rgba(20, 11, 92, 1);
