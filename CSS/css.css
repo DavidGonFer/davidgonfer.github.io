@@ -1,9 +1,9 @@
 @keyframes aparecerSombraTexto {
     0% {
-      text-shadow:0px 0px 7px rgb(0, 0, 0);
+      text-shadow:0px 0px 0px rgb(0, 0, 0);
     }
     100% {
-        text-shadow: 10px 10px 7px rgb(0, 0, 0);
+        text-shadow: 4px 4px 0px #6F2DA8;
     }
   }
   @keyframes aparecerTexto {
@@ -34,7 +34,7 @@ html{
 }
 body{
     height: 4000px;
-    
+    font-family: 'Open Sans', sans-serif;
 
 }
 #pantallaInicial{
@@ -55,40 +55,52 @@ body{
 
 }
 #nombre h1, #nombre h2{
-    margin: 10px auto;
+    margin: 4px auto;
 }
 
 #nombre h1{
     font-family: 'Smooch', cursive;
-    font-size: 80px;
-    color: rgb(134, 187, 216);
+    font-size: 100px;
+    color: rgb(0, 255, 234);
     animation: 1s ease-out 1s 1 aparecerSombraTexto, 3s ease-out 0s 1 aparecerTexto;
     animation-fill-mode: forwards; 
-    
+    font-weight: 900;
 }
 #nombre h2{
     font-size: 30px;
-    color: rgb(134, 187, 216);
+    color: rgb(0, 255, 234);
     animation: 1s ease-out 1s 1 aparecerSombraTexto, 3s ease-out 0s 1 aparecerTexto;
     animation-fill-mode: forwards; 
 }
 
 #nombre a{
+    background-color: #6f2da825 ;
     opacity: 0;
-    width: 100px;
-    height: 40px;
+    width: 120px;
+    height: 50px;
     border: 3px solid rgb(97, 123, 170);
     text-decoration: none;
     display: block;
     margin: auto;
-    line-height: 40px;
-    color: rgb(134, 187, 216);
-    border-radius: 4px;
-    animation: 1s ease-out 3s 1 aparecerSombraTexto, 2s ease-out 3s 1 aparecerTexto,1s ease-out 3s 1 aparecerSombraCaja;
+    line-height: 45px;
+    color: rgb(0, 204, 187);
+    border-radius: 40px;
+    animation: 2s ease-out 3s 1 aparecerTexto,1s ease-out 3s 1 aparecerSombraCaja;
     animation-fill-mode: forwards; 
-    font-weight: 800;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
+#nombre a:hover{
+    border: 3px solid rgb(72, 92, 129);
+    background-color: #6f2da810 ;
+    transition: 0.3s;
+}
+
+#nombre a:active{
+    box-shadow:0px 0px 7px rgb(0, 0, 0);
+    transition: 0.5s;
+}
 #marcador1{
     position: absolute;
     top: 1200px;
@@ -172,4 +184,10 @@ $midnight-blue: rgba(20, 20, 100, 1);
 $isabelline: rgba(238, 236, 235, 1);
 $midnight-blue-2: rgba(19, 10, 88, 1);
 $lavender-gray: rgba(185, 181, 200, 1);
+
+$dark-turquoise: rgba(44, 226, 230, 1);
+$magenta-dye: rgba(204, 4, 117, 1);
+$dark-violet: rgba(148, 0, 202, 1);
+$flickr-blue: rgba(2, 94, 235, 1);
+$dark-turquoise-2: rgba(46, 215, 230, 1);
 */
