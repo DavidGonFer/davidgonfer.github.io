@@ -3,7 +3,15 @@
       text-shadow:0px 0px 0px rgb(0, 0, 0);
     }
     100% {
-        text-shadow: 4px 4px 0px #6F2DA8;
+        text-shadow: 3px 3px 1px #6F2DA8;
+    }
+  }
+  @keyframes aparecerSombraTexto2 {
+    0% {
+      text-shadow:0px 0px 0px rgb(0, 0, 0);
+    }
+    100% {
+        text-shadow: 6px 6px 0px #6F2DA8;
     }
   }
   @keyframes aparecerTexto {
@@ -63,7 +71,7 @@ body{
     font-family: 'Smooch', cursive;
     font-size: 100px;
     color: rgb(0, 255, 234);
-    animation: 1s ease-out 1s 1 aparecerSombraTexto, 3s ease-out 0s 1 aparecerTexto;
+    animation: 1s ease-out 1s 1 aparecerSombraTexto2, 3s ease-out 0s 1 aparecerTexto;
     animation-fill-mode: forwards; 
     font-weight: 900;
 }
@@ -182,9 +190,30 @@ background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 100%)
     height: 2000px;
     width: -webkit-fill-available;
     background: rgb(20,20,100);
-background: linear-gradient(180deg, rgba(20,20,100,1) 0%, rgba(0,129,255,1) 48%, rgba(0,181,255,1) 78%, rgba(0,232,255,1) 100%);
+    background: linear-gradient(180deg, rgba(20,20,100,1) 0%, rgba(0,129,255,1) 48%, rgba(0,181,255,1) 78%, rgba(0,232,255,1) 100%);
+    padding-top: 10%;
 }
 
+#studyBox{
+    
+    margin: auto;
+    width: 60%;
+    background-color:rgb(238, 236, 235) ;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+#studyBox h2, #studyBox p{
+    margin: 0px;
+}
+#studyBox h2{
+    font-family: 'Smooch', cursive;
+    font-size: 70px;
+}
+#studyBox p{
+    font-size: 20px;
+
+}
 
 
 /* 
