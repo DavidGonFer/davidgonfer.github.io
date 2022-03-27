@@ -28,12 +28,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    height: 4000px;
+
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -113,11 +114,11 @@ body{
 #aboutMe{
     position: sticky;
     top: 0px;
-    left: 0px;
     height: 1300px;
+    width: fit-content;
     z-index: 0;
     background: rgb(19,14,45);
-background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 88%, rgba(3,79,199,1) 100%);
+background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 100%);
 }
 #whiteBackgroundLimit{
     height: 600px;
@@ -125,16 +126,17 @@ background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 88%, 
 #whiteBackground{
     position: sticky;
     top:200px;
+    height: fit-content;
     margin-left: 200px;
     background-color:rgb(238, 236, 235) ;
-    width: 1703px;
-    height: 200px;
+    width: fit-content;
     border-top-left-radius:30px ;
     border-bottom-left-radius:30px ;
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 10px;
     box-shadow: 10px 10px 15px rgb(0, 0, 0);
     display:block;
+    word-break: break-word;
+    padding-right: 30px;
 }
 
 #whiteBackground h2{
@@ -176,10 +178,10 @@ background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 88%, 
 }
 
 #study{
-    height: 1080px;
+    height: 2000px;
     width: 1900px;
-    background: rgb(3,79,199);
-    background: linear-gradient(180deg, rgba(3,79,199,1) 0%, rgba(0,134,255,1) 29%);
+    background: rgb(20,20,100);
+background: linear-gradient(180deg, rgba(20,20,100,1) 0%, rgba(0,129,255,1) 48%, rgba(0,181,255,1) 78%, rgba(0,232,255,1) 100%);
 }
 
 
