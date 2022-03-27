@@ -42,10 +42,10 @@ body{
     position: absolute;
     top: 0px;
     z-index: 1;
-    width: 1903px;
+    width: -webkit-fill-available;
     height: 1200px;
     background: url("../IMG/prueba.png") repeat 0 0;
-    background-position: center;
+    background-position:center ;
 }
 #nombre{
     position: absolute;
@@ -115,7 +115,7 @@ body{
     position: sticky;
     top: 0px;
     height: 1300px;
-    width: fit-content;
+    width: -webkit-fill-available;
     z-index: 0;
     background: rgb(19,14,45);
 background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 100%);
@@ -127,9 +127,10 @@ background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 100%)
     position: sticky;
     top:200px;
     height: fit-content;
-    margin-left: 200px;
+    right: 0px;
     background-color:rgb(238, 236, 235) ;
     width: fit-content;
+    margin-left: 10%;
     border-top-left-radius:30px ;
     border-bottom-left-radius:30px ;
     padding-bottom: 10px;
@@ -179,7 +180,7 @@ background: linear-gradient(180deg, rgba(19,14,45,1) 5%, rgba(20,20,100,1) 100%)
 
 #study{
     height: 2000px;
-    width: 1900px;
+    width: -webkit-fill-available;
     background: rgb(20,20,100);
 background: linear-gradient(180deg, rgba(20,20,100,1) 0%, rgba(0,129,255,1) 48%, rgba(0,181,255,1) 78%, rgba(0,232,255,1) 100%);
 }
